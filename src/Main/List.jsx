@@ -21,6 +21,7 @@ export function List(props) {
                 <input onChange={input} placeholder="Введите имя" value={inp}></input>
                 <button>Добавить</button>
             </form>
+            <h1>Список</h1>
             <PersonList list={props.array} />
         </div>
     )
