@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Message from "./Components/Message";
+import "./Styles/style.css";
+import { Container } from "./Main/Container";
+import { Convert, Array } from "./Main/Convert";
+import { List } from "./Main/List";
+import { ListItem } from "./Main/ListItem";
+import { NewItem } from "./Main/NewItem";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* {/* <Container/> */}
+      {/* <List array={langs} /> */}
+      <Container/>
     </div>
   );
 }
-
-export default App;
