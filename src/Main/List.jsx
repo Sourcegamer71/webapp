@@ -4,27 +4,27 @@ import { PersonList } from "./ListItem";
 
 export function List(props) {
     const [inp, setInp] = useState('');
-    const [girl, setGirl] = useState('')
+    const [val, setVal] = useState('');
     function input(e) {
-        setInp(e.target.value);
+        setInp(e.target.value)
     }
     function create(e) {
-        e.preventDefault();
-        setGirl(inp);
-        props.array.push(inp)
+
+        setVal(inp);
+        props.array.push(inp);
+        setInp('')
+        console.log(inp);
         console.log(props.array);
-        setInp('');
+        e.preventDefault();
     }
     return (
         <div className="list" >
-            <form onSubmit={create} >
-                <input onChange={input} placeholder="Введите имя" value={inp}></input>
+            <form onSubmit={create}>
+                <input value={inp} onInput={input}></input>
                 <button>Добавить</button>
             </form>
-            <h1>Список</h1>
             <PersonList list={props.array} />
         </div>
     )
-
 }
 

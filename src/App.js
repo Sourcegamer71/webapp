@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Message from "./Components/Message";
-import "./Styles/style.css";
 import { Container } from "./Main/Container";
 import { Convert, Array } from "./Main/Convert";
 import { List } from "./Main/List";

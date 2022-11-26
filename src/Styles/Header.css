@@ -1,0 +1,11 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#header
+{
+    border: 1px solid black;
+    grid-area: h;
+    background-color: rgb(206, 206, 206);
+}
