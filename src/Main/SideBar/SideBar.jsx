@@ -1,10 +1,10 @@
 import { useState } from "react";
 import React from "react";
-
+import cl from './Sidebar.module.css';
 
 export function SideBar() {
     return (
-        <div id='sidebar'>
+        <div id={cl.sidebar}>
             <div>База данных</div>
             <div>Ray of Hope</div>
             <div>Арт-студия</div>

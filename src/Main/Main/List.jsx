@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { PersonList } from "./ListItem";
-
+import cl from './Main.module.css'
 export function List(props) {
     const [inp, setInp] = useState('');
     const [val, setVal] = useState('');
@@ -18,7 +18,7 @@ export function List(props) {
         e.preventDefault();
     }
     return (
-        <div className="list" >
+        <div className={cl.list} >
             <form onSubmit={create}>
                 <input value={inp} onInput={input}></input>
                 <button>Добавить</button>
