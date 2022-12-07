@@ -7,7 +7,7 @@ export function Footer() {
         <div id={cl.footer}>
             <div>Contact us</div>
             <div>All Rights Reserved</div>
-            <TimeOut />
+            {/* <TimeOut /> */}
         </div>
     )
 }

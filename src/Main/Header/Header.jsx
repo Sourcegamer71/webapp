@@ -5,7 +5,7 @@ import cl from './Header.module.css';
 export function Header() {
     return (
         <div id={cl.header}>
-            <img src='.././Img/logo.jpg'></img>
-        </div>
+            <img height={'100%'} src={require('./logo.jpg')}></img>
+        </div >
     )
 }

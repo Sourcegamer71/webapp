@@ -1,0 +1,20 @@
+.container
+{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.link
+{
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+}
+.active
+{
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    font-weight: 700;
+}
+.block
+{
+    border:1px solid black;
+}

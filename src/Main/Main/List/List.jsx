@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { PersonList } from "./ListItem";
-import cl from './Main.module.css'
+import cl from '../Main.module.css'
 export function List(props) {
     const [inp, setInp] = useState('');
     const [val, setVal] = useState('');
@@ -19,11 +19,12 @@ export function List(props) {
     }
     return (
         <div className={cl.list} >
+            <h1>Post</h1>
             <form onSubmit={create}>
                 <input value={inp} onInput={input}></input>
                 <button>Добавить</button>
             </form>
-            <PersonList list={props.array} />
+            <PersonList list={props.news} />
         </div>
     )
 }
