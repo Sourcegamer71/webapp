@@ -3,8 +3,10 @@ import React from "react";
 import cl from './Post.module.css'
 
 export const Post = (props) => {
-    return <div className={cl.post}>
-        <div >{props.title}</div>
-        <img className={cl.post_img} alt={props.al} src={props.src}></img>
-    </div>
+    const array = props.posts;
+    const list = array.map(val => <div className={cl.post}>
+        <div >{val.title}</div>
+        <img className={cl.post_img} src={val.src}></img>
+    </div>)
+    return <div>{list}</div>
 }

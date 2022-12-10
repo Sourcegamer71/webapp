@@ -2,8 +2,8 @@ import { useState } from "react";
 import React from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import cl from './Dialogs.module.css';
-import { Dialog, profiles } from "./Dialog";
-import { messages1, messages2, Messages } from "./Message";
+import { Dialog } from "./Dialog";
+import { Messages } from "./Message";
 
 
 export function Dialogs(props) {
